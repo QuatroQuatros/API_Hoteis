@@ -3,7 +3,7 @@ from db import db
 class HotelModel(db.Model):
 	__tablename__ = "hoteis"
 
-	hotel_id = db.Column(db.String, primary_key = True)
+	hotel_id = db.Column(db.String(), primary_key = True)
 	nome = db.Column(db.String(80))
 	estrelas = db.Column(db.Float(precision=1))
 	diaria = db.Column(db.Float(precision=2))
